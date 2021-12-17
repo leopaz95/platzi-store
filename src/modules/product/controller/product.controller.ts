@@ -1,7 +1,7 @@
 import { Controller, Get, Param, Query } from '@nestjs/common';
 
-@Controller('products')
-export class ProductsController {
+@Controller('product')
+export class ProductController {
   @Get()
   getProducts(
     @Query('limit') limit = 100,
